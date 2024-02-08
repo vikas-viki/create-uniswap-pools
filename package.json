@@ -1,0 +1,33 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-promise": "^5.2.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.8.8",
+    "prettier-plugin-solidity": "^1.2.0",
+    "solhint": "^3.6.2",
+    "solidity-coverage": "^0.7.22"
+  },
+  "dependencies": {
+    "@uniswap/sdk-core": "^4.0.10",
+    "@uniswap/v3-sdk": "^3.10.2"
+  },
+  "scripts": {
+    "deploytokens": "npx hardhat run scripts\\deployToken.js --network ethSepolia",
+    "createpools": "npx hardhat run scripts\\createUniswapPools.js --network ethSepolia"
+  }
+}
