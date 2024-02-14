@@ -24,10 +24,12 @@
   },
   "dependencies": {
     "@uniswap/sdk-core": "^4.0.10",
-    "@uniswap/v3-sdk": "^3.10.2"
+    "@uniswap/v3-sdk": "^3.10.2",
+    "bignumber.js": "^9.1.2"
   },
   "scripts": {
     "deploytokens": "npx hardhat run scripts\\deployToken.js --network ethSepolia",
-    "createpools": "npx hardhat run scripts\\createUniswapPools.js --network ethSepolia"
+    "createpools": "npx hardhat run scripts\\createUniswapPools.js --network ethSepolia",
+    "calculateSqrtPrice": "npx hardhat run scripts\\sqrtPrice96.js"
   }
 }
